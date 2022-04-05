@@ -1,25 +1,26 @@
 
-#include <stdio.h>
 #include "../include/commander.h"
+#include <stdio.h>
 
-static void
-verbose() {
+
+static void verbose()             {
   printf("verbose: enabled\n");
 }
 
-static void
-required(command_t *self) {
+
+static void required(command_t *self)             {
   printf("required: %s\n", self->arg);
 }
 
-static void
-optional(command_t *self) {
+
+static void optional(command_t *self)             {
   printf("optional: %s\n", self->arg);
 }
 
-int
-server_commander(int argc, char **argv){
+
+int server_commander(int argc, char **argv)     {
   command_t cmd;
+
   command_init(&cmd, argv[0], "0.0.1");
   command_option(&cmd, "-v", "--verbose", "enable verbose stuff", verbose);
   command_option(&cmd, "-r", "--required <arg>", "required arg", required);
@@ -30,5 +31,5 @@ server_commander(int argc, char **argv){
     printf("  - '%s'\n", cmd.argv[i]);
   }
   command_free(&cmd);
-  return 0;
+  return(0);
 }

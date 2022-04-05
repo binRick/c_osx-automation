@@ -13,7 +13,7 @@
  */
 
 #ifndef COMMANDER_MAX_OPTIONS
-#define COMMANDER_MAX_OPTIONS 32
+#define COMMANDER_MAX_OPTIONS    32
 #endif
 
 /*
@@ -21,7 +21,7 @@
  */
 
 #ifndef COMMANDER_MAX_ARGS
-#define COMMANDER_MAX_ARGS 32
+#define COMMANDER_MAX_ARGS    32
 #endif
 
 /*
@@ -34,20 +34,20 @@ struct command;
  * Option callback.
  */
 
-typedef void (* command_callback_t)(struct command *self);
+typedef void (*command_callback_t)(struct command *self);
 
 /*
  * Command option.
  */
 
 typedef struct {
-  int optional_arg;
-  int required_arg;
-  char *argname;
-  char *large;
-  const char *small;
-  const char *large_with_arg;
-  const char *description;
+  int                optional_arg;
+  int                required_arg;
+  char               *argname;
+  char               *large;
+  const char         *small;
+  const char         *large_with_arg;
+  const char         *description;
   command_callback_t cb;
 } command_option_t;
 
@@ -56,16 +56,16 @@ typedef struct {
  */
 
 typedef struct command {
-  void *data;
-  const char *usage;
-  const char *arg;
-  const char *name;
-  const char *version;
-  int option_count;
+  void             *data;
+  const char       *usage;
+  const char       *arg;
+  const char       *name;
+  const char       *version;
+  int              option_count;
   command_option_t options[COMMANDER_MAX_OPTIONS];
-  int argc;
-  char *argv[COMMANDER_MAX_ARGS];
-  char **nargv;
+  int              argc;
+  char             *argv[COMMANDER_MAX_ARGS];
+  char             **nargv;
 } command_t;
 
 // prototypes

@@ -252,20 +252,20 @@
 // Decorations
 //
 
-#define AC_BOLD         "\x1b[1m"
-#define AC_FAINT        "\x1b[2m"
-#define AC_ITALIC       "\x1b[3m"
-#define AC_UNDERLINE    "\x1b[4m"
-#define AC_BLINK        "\x1b[5m"
-#define AC_FAST_BLINK   "\x1b[6m"
+#define AC_BOLD          "\x1b[1m"
+#define AC_FAINT         "\x1b[2m"
+#define AC_ITALIC        "\x1b[3m"
+#define AC_UNDERLINE     "\x1b[4m"
+#define AC_BLINK         "\x1b[5m"
+#define AC_FAST_BLINK    "\x1b[6m"
 ////////////////////////////////////
-#define AC_INVERSE      "\x1b[7m"
-#define AC_INVERSED     "\x1b[7m"
-#define AC_REVERSED     "\x1b[7m"
-#define AC_REVERSE      "\x1b[7m"
-#define AC_SOLID        "\x1b[7m"
+#define AC_INVERSE       "\x1b[7m"
+#define AC_INVERSED      "\x1b[7m"
+#define AC_REVERSED      "\x1b[7m"
+#define AC_REVERSE       "\x1b[7m"
+#define AC_SOLID         "\x1b[7m"
 ////////////////////////////////////
-#define AC_INVISIBLE        "\x1b[8m"
+#define AC_INVISIBLE     "\x1b[8m"
 
 //
 // Cursor and screen
