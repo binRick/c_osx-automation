@@ -1,9 +1,9 @@
-#include "strsplit.h"
+#include "../include/strsplit.h"
 #include <stdlib.h>
 #include <string.h>
 
 
-static char ** _strsplit(const char *s, const char *delim, size_t *nb) {
+char ** _strsplit(const char *s, const char *delim, size_t *nb) {
   void       *data;
   char       *_s = ( char * )s;
   const char **ptrs;
