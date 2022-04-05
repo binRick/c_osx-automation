@@ -8,6 +8,8 @@
 #include <stdio.h>
 #include <string.h>
 /********************************/
+#include "../include/server.h"
+/********************************/
 #include "../deps/dbg.h/dbg.h"
 #include "../deps/generic-print/print.h"
 #include "../deps/subprocess.h/subprocess.h"

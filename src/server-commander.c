@@ -3,22 +3,22 @@
 #include <stdio.h>
 
 
-static void verbose()             {
+static void verbose() {
   printf("verbose: enabled\n");
 }
 
 
-static void required(command_t *self)             {
+static void required(command_t *self) {
   printf("required: %s\n", self->arg);
 }
 
 
-static void optional(command_t *self)             {
+static void optional(command_t *self) {
   printf("optional: %s\n", self->arg);
 }
 
 
-int server_commander(int argc, char **argv)     {
+int server_commander(int argc, char **argv) {
   command_t cmd;
 
   command_init(&cmd, argv[0], "0.0.1");
